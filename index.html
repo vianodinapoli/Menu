@@ -9,36 +9,37 @@
 
     <script type="text/jsx">
       // Select the div element with 'app' id
-      const app = document.getElementById("app");
+       const app = document.getElementById("app");
 
-function Header() {
-    return <h1>Header. Preview. Ship.</h1>
-}
+ function Header(props) {
+  console.log(props)
+     return <h1>Header. Preview. Ship.</h1>
+ }
 
-function Article(){
-  return <h2>Article</h2>
-}
+ function Article(){
+   return <h2>Article</h2>
+ }
 
-function Footer(){
-  return <h2>Footer</h2>
-}
+ function Footer(){
+   return <h2>Footer</h2>
+ }
 
-function HomePage(){
-  return ( 
-    <div>
-   <Header />
-          <Article />
-             <Footer />
+ function HomePage(){
+   return ( 
+     <div>
+    <Header title="React" />
+            <Article />
+               <Footer />
 
-  </div>
-
-
+   </div>
 
 
-);
-}
 
-   ReactDOM.render(<HomePage />, app)
+
+ );
+ }
+
+    ReactDOM.render(<HomePage />, app)
     </script>
   </body>
 </html>
