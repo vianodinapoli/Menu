@@ -11,9 +11,9 @@
       // Select the div element with 'app' id
        const app = document.getElementById("app");
 
- function Header(props) {
-  console.log(props)
-     return <h1>Header. Preview. Ship.</h1>
+ function Header({title}) {
+  console.log(title) // { title: "TEst 💙" }
+     return <h1> {`O titulo definido é ${title}`}</h1>
  }
 
  function Article(){
@@ -30,11 +30,7 @@
     <Header title="React" />
             <Article />
                <Footer />
-
    </div>
-
-
-
 
  );
  }
